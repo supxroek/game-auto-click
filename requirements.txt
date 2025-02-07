@@ -1,0 +1,7 @@
+keyboard
+mss
+opencv-python-headless
+numpy
+pyautogui
+rich
+colorama
