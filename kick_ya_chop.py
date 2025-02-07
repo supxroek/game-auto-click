@@ -29,6 +29,7 @@ fps_time = time()
 while True:
     side = 'left' if left else 'right'
     scr = np.array(sct.grab(dimensions[left]))[:, :, :3]
+    scr = cv2.cvtColor(scr, cv2.COLOR_BGR2RGB)  # Convert to RGB format
     wood = wood_images[side]
     w, h = wood_shapes[side]
 
